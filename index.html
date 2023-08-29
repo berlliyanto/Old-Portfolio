@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Portofolio</title>
+</head>
+
+<body>
+    <div class="scrollUp" onclick="goToBeranda()">
+        <i class="fa fa-arrow-up"></i>
+    </div>
+    <nav class="navigasi">
+        <div class="profile-name"><a href="index.html">Berlliyanto Aji Nugraha</a></div>
+        <ul class="nav-menu">
+            <li><a href="#beranda" class="active">Beranda</a></li>
+            <li><a href="#tentang">Tentang</a></li>
+            <li><a href="#pendidikan">Pendidikan</a></li>
+            <li><a href="#keahlian">Keahlian</a></li>
+            <li><a href="#pengalaman">Pengalaman</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+    <main>
+        <section class="beranda" id="beranda">
+            <div class="hello">
+                <h4 class="">Hallo!</h4>
+                <h1 class="">Nama Saya</h1>
+                <h1 class="name ">Berlliyanto Aji Nugraha</h1>
+                <h3><span id="typing"></span></h3>
+                <div class="skills">
+                    <span class="nodejs">Node.js</span>
+                    <span class="php">PHP</span>
+                    <span class="flutter">Flutter</span>
+                    <span class="mongodb">MongoDB</span>
+                    <span class="mysql">MySQL</span>
+                </div>
+                <div class="button">
+                    <button class="btn-cv" onclick="downloadPDF()">Download CV</button>
+                    <button class="btn-kontak" onclick="goToKontak()">Kontak Saya</button>
+                </div>
+            </div>
+            <div class="avatar">
+            </div>
+        </section>
+        <section class="tentang" id="tentang">
+            <h1>Tentang Saya</h1>
+            <div class="deskripsi">
+                <p>Saya mahasiswa semester akhir program studi D4 Politeknik Manufaktur Bandung. Studi saya telah
+                    memperkaya saya
+                    dengan pengetahuan di bidang pengembangan perangkat lunak khususnya di bidang aplikasi web, aplikasi
+                    mobile dan IoT
+                    untuk membimbing saya dengan lebih baik dalam karir masa depan saya. Ilmu yang saya pelajari adalah
+                    Flutter, Node.js, PHP, SQL dan MongoDB. Saya
+                    seseorang yang dapat belajar mandiri dan memecahkan masalah. Oleh karena itu, saya yakin bisa
+                    beradaptasi dengan cepat dan membuat
+                    dampak yang baik dalam peran teknik.</p>
+            </div>
+        </section>
+        <section class="pendidikan" id="pendidikan">
+            <h1 class="">Pendidikan</h1>
+            <div class="polman">
+                <img src="assets/Pendidikan/polman.png" alt="">
+                <p>2019-2023</p>
+                <h4>Politeknik Manufaktur Bandung</h4>
+                <h2>Teknologi Rekayasa Otomasi</h2>
+            </div>
+            <div class="sma">
+                <img src="assets/Pendidikan/sman23.png" alt="">
+                <p>2016-2019</p>
+                <h4>SMAN 23 Bandung</h4>
+                <h2>MIPA</h2>
+            </div>
+        </section>
+        <section class="keahlian" id="keahlian">
+            <h1 class="">Keahlian</h1>
+            <div class="webdev">
+                <img src="assets/Keahlian/web.svg" alt="">
+                <h2>Web Developer</h2>
+                <p>Memahami bahasa pemrograman HTML, CSS, JavaScript, PHP dan framework Node.JS. </p>
+                <div class="line"></div>
+                <div class="boxskill">
+                    HTML | CSS | JavaScript | PHP | Node.JS
+                </div>
+            </div>
+            <div class="mobile">
+                <img src="assets/Keahlian/mobile.svg" alt="">
+                <h2>Mobile Developer</h2>
+                <p>Mampu membuat aplikasi mobile dengan bahasa pemrograman Dart dengan framework Flutter.</p>
+                <div class="line"></div>
+                <div class="boxskill">
+                    Dart | Flutter
+                </div>
+            </div>
+            <div class="iot">
+                <img src="assets/Keahlian/iot.svg" alt="">
+                <h2>Internet of Things</h2>
+                <p>Mampu mengintegrasikan antara User Interface, Mesin dan Database menjadi sebuah sistem IoT.</p>
+                <div class="line"></div>
+                <div class="boxskill">
+                    REST API | Arduino | PLC | MongoDB | MySQL
+                </div>
+            </div>
+        </section>
+        <br><br><br><br><br><br>
+        <section class="pengalaman" id="pengalaman">
+            <h1 class="">Pengalaman</h1>
+            <div class="content">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide content-1">
+                            <img src="/assets/Pengelola-Gudang/dashboard.png" alt="">
+                            <h6>CV. Karya Hidup Sentosa</h6>
+                            <h5>PHP | Bootstrap | MySQL</h5>
+                            <h2>Sistem Informasi Pengelolaan Material Pada Gudang Divisi</h2>
+                            <p>Sistem pengelolaan material gudang secara digital berbasis CRUD menggunakan pemrograman
+                                PHP dan
+                                database MySQL.</p>
+                            <div class="button-pengalaman">
+                                <div class="btn-selengkapnya" id="sel-gudang">
+                                    <p>Selengkapnya</p>
+                                </div>
+                                <div class="btn-github" id="git-gudang">
+                                    <p>Github</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide content-2">
+                            <img src="assets/Enterprise-DCS/dashboard.png" alt="">
+                            <h6>Politeknik Manufaktur Bandung</h6>
+                            <h5>Flutter | PHP | ESP8266 | PLC Siemens | MySQL</h5>
+                            <h2>Sistem Monitoring Station Pick and Place</h2>
+                            <p>Sistem Monitoring untuk menghitung benda kerja dan status benda kerja pada station pick &
+                                place dibuat dengan Flutter sebagai Frontend, PHP sebagai Backend dan MySQL sebagai
+                                penyimpanan data.</p>
+                            <div class="button-pengalaman">
+                                <div class="btn-selengkapnya" id="sel-erp-dcs">
+                                    <p>Selengkapnya</p>
+                                </div>
+                                <div class="btn-github" id="git-erp-dcs">
+                                    <p>Github</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide content-3">
+                            <img src="assets/Portfolio/beranda.png" alt="">
+                            <h6>Website Personal</h6>
+                            <h5>HTML | CSS | JavaScript</h5>
+                            <h2>Portfolio</h2>
+                            <p>Website portofolio pribadi yang dibuat dengan bahasa pemrograman web dasar yaitu HTML,
+                                CSS dan JavaScript.</p>
+                            <div class="button-pengalaman">
+                                <div class="btn-selengkapnya" id="sel-porto">
+                                    <p>Selengkapnya</p>
+                                </div>
+                                <div class="btn-github" id="git-porto">
+                                    <p>Github</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide content-4">
+                            <img src="assets/Enterprise/dashboard.png" alt="">
+                            <h6>Politeknik Manufaktur Bandung</h6>
+                            <h5>Flutter | Node.JS | Zoho CRM | MongoDB</h5>
+                            <h2>Simulasi Sistem ERP Untuk Memantau Proses Industri dan Marketing Produk</h2>
+                            <p>Simulasi Sistem ERP berguna untuk memantau seluruh proses industri yang dibuat
+                                menggunakan Flutter sebagai web admin, Node.JS sebagai backend API dan tampilan web
+                                penjualan dan MongoDB sebagai tempat penyimpanan data.</p>
+                            <div class="button-pengalaman">
+                                <div class="btn-selengkapnya" id="sel-erp">
+                                    <p>Selengkapnya</p>
+                                </div>
+                                <div class="btn-github" id="git-erp">
+                                    <p>Github</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide content-5">
+                            <img src="assets/TA/dashboard.jpg" alt="">
+                            <div class="mobile-content">
+                                <div class="detailll">
+                                    <h6>Politeknik Manufaktur Bandung</h6>
+                                    <h5>Flutter | Node.JS | Arduino | Raspberry | MongoDB</h5>
+                                    <h2>Sistem Monitoring Pada Prototype Mesin Stamping Dengan Perhitungan OEE Berbasis
+                                        Android (Tugas Akhir) </h2>
+                                    <p>Merupakan proyek tugas akhir yang mengimplementasikan sistem monitoring produksi
+                                        pada prototype mesin Stamping dengan perhitungan OEE menggunakan Flutter,
+                                        Node.JS, MongoDB, Arduino Nano dan Raspberry</p>
+                                </div>
+                                <div class="button-pengalaman-mobile">
+                                    <div class="btn-selengkapnya" id="sel-TA-mobile">
+                                        <p>Selengkapnya</p>
+                                    </div>
+                                    <div class="btn-github" id="git-TA-mobile">
+                                        <p>Github</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide content-6">
+                            <img src="assets/Task-Management-App/login.jpg" alt="">
+                            <div class="mobile-content">
+                                <div class="detaillll">
+                                    <h6>Personal Project</h6>
+                                    <h5>Flutter GetX | Node.JS | MongoDB</h5>
+                                    <h2>Aplikasi Manajemen Tugas (To-Do List)</h2>
+                                    <p>Sistem manajemen tugas berbasis aplikasi android untuk mengelola tugas - tugas
+                                        harian Todo-List App menggunakan Flutter GetX , Node.JS dan MongoDB</p>
+                                </div>
+                                <div class="button-pengalaman-mobile">
+                                    <div class="btn-selengkapnya" id="sel-todo-mobile">
+                                        <p>Selengkapnya</p>
+                                    </div>
+                                    <div class="btn-github" id="git-todo-mobile">
+                                        <p>Github</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </section>
+        <section class="kontak" id="kontak">
+            <h1 class="">Kontak</h1>
+            <div class="alamat">
+                <i class="icon">
+                    <img src="icon/marker.svg" alt="">
+                </i>
+                <h2>Alamat</h2>
+                <p>Girimande B-11 No. 13, Karang Pamulang, Mandalajati, Kota Bandung, 40195</p>
+            </div>
+            <div class="contact">
+                <i class="icon">
+                    <img src="icon/address-book.svg" alt="">
+                </i>
+                <h2>Kontak</h2>
+                <p>+6285900443847</p>
+            </div>
+            <div class="email">
+                <i class="icon">
+                    <img src="icon/envelope.svg" alt="">
+                </i>
+                <h2>Email</h2>
+                <p>berlianto393@gmail.com</p>
+            </div>
+            <div class="website">
+                <i class="icon">
+                    <img src="icon/globe.svg" alt="">
+                </i>
+                <h2>Website</h2>
+                <p><a href="">aplikasipms.com</a></p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <h2>Tentang Saya</h2>
+            <p>Saya mahasiswa semester akhir program studi D4 Politeknik Manufaktur Bandung. Studi saya telah
+                memperkaya saya
+                dengan pengetahuan di bidang pengembangan perangkat lunak khususnya di bidang aplikasi web, aplikasi
+                mobile dan IoT
+                untuk membimbing saya dengan lebih baik dalam karir masa depan saya. Ilmu yang saya pelajari adalah
+                Flutter, Node.js, PHP, SQL dan MongoDB. Saya
+                seseorang yang dapat belajar mandiri dan memecahkan masalah. Oleh karena itu, saya yakin bisa
+                beradaptasi dengan cepat dan membuat
+                dampak yang baik dalam peran teknik.</p>
+        </div>
+        <div class="footer-content">
+            <h2>Kontak</h2>
+            <a href="">+6285900443847</a>
+            <a href="">berlianto393@gmail.com</a>
+        </div>
+        <div class="footer-content">
+            <h2>Links</h2>
+            <a href="#beranda">- Beranda</a>
+            <a href="#tentang">- Tentang</a>
+            <a href="#pendidikan">- Pendidikan</a>
+            <a href="#keahlian">- Keahlian</a>
+            <a href="#pengalaman">- Pengalaman</a>
+        </div>
+        <div class="footer-content">
+            <h2>Social Media</h2>
+            <div class="wrapper" id="github">
+                <div class="github">
+                    <img src="icon/github.svg" alt="">
+                </div>
+                <span>Github</span>
+            </div>
+            <div class="wrapper" id="linkedin">
+                <div class="linkedin">
+                    <img src="icon/linkedin.svg" alt="">
+                </div>
+                <span>LinkedIn</span>
+            </div>
+            <div class="wrapper" id="instagram">
+                <div class="instagram">
+                    <img src="icon/instagram.svg" alt="">
+                </div>
+                <span>Instagram</span>
+            </div>
+        </div>
+        <div class="copy-right">
+            <h6>Copyright <span id="year"></span> Berlliyanto Aji Nugraha</h6>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/cdn/typed.umd.js"></script>
+    <script src="js/cdn/swiper-bundle.min.js"></script>
+    <script>
+        var swiper;
+        function initSwiper() {
+            var swiperOptions = {
+                loop: true,
+                slidesPerView: 2,
+                spaceBetween: 10,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                    dynamicBullets: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            };
+
+            if (window.innerWidth <= 768) {
+                swiperOptions.slidesPerView = 1;
+            }
+
+            if (swiper) {
+                swiper.destroy();
+            }
+
+            swiper = new Swiper('.swiper', swiperOptions);
+        }
+
+        initSwiper();
+
+        window.addEventListener('resize', function () {
+            initSwiper();
+        });
+    </script>
+</body>
+
+</html>
