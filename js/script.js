@@ -33,7 +33,7 @@ navLinks.forEach(function (link) {
 
 // Download CV
 function downloadPDF() {
-    var pdfURL = '../file/CV_berli.pdf';
+    var pdfURL = '../file/CV_Berli_Indo.pdf';
     window.open(pdfURL, '_blank');
 }
 
@@ -72,52 +72,72 @@ gudang.addEventListener('mouseenter', (event) => {
 // Button Pengalaman
 // Github
 document.getElementById('git-gudang').addEventListener('click', ()=>{
-    let URL = '';
+    let URL = 'https://github.com/berlliyanto/Pengelola-Gudang';
     window.open(URL, '_blank');
 });
 document.getElementById('git-erp-dcs').addEventListener('click', ()=>{
-    let URL = '';
+    let URL = 'https://github.com/berlliyanto/Praktikum-Enterprise2-Frontend';
     window.open(URL, '_blank');
 });
 document.getElementById('git-porto').addEventListener('click', ()=>{
-    let URL = '';
+    let URL = 'https://github.com/berlliyanto/portfolio';
     window.open(URL, '_blank');
 });
 document.getElementById('git-erp').addEventListener('click', ()=>{
-    let URL = '';
+    let URL = 'https://github.com/berlliyanto/Enterprise-Project-Frontend';
     window.open(URL, '_blank');
 });
 document.getElementById('git-TA-mobile').addEventListener('click', ()=>{
-    let URL = '';
+    let URL = 'https://github.com/berlliyanto/Flutter_TugasAkhir';
     window.open(URL, '_blank');
 });
 document.getElementById('git-todo-mobile').addEventListener('click', ()=>{
-    let URL = '';
+    let URL = 'https://github.com/berlliyanto/Task-Management-App-Mobile';
+    window.open(URL, '_blank');
+});
+document.getElementById('git-revou').addEventListener('click', ()=>{
+    let URL = 'https://github.com/revou-fundamental-course/21-aug-23-berlliyanto';
     window.open(URL, '_blank');
 });
 
+document.getElementById('git-react').addEventListener('click', ()=>{
+    let URL = 'https://github.com/berlliyanto/Clone_TugasAkhir_ReactJS';
+    window.open(URL, '_blank');
+});
+
+
+
 document.getElementById('sel-gudang').addEventListener('click', ()=>{
-    let URL = '';
+    let URL = 'https://aplikasipms.com/gudang';
     window.open(URL, '_blank');
 });
 document.getElementById('sel-erp-dcs').addEventListener('click', ()=>{
-    let URL = '';
+    let URL = 'https://aplikasipms.com/enterprise2/frontend/#/';
     window.open(URL, '_blank');
 });
 document.getElementById('sel-porto').addEventListener('click', ()=>{
-    let URL = '';
+    let URL = 'index.html';
     window.open(URL, '_blank');
 });
 document.getElementById('sel-erp').addEventListener('click', ()=>{
-    let URL = '';
+    let URL = 'https://aplikasipms.com/enterprise-simulation/#/';
     window.open(URL, '_blank');
 });
 document.getElementById('sel-TA-mobile').addEventListener('click', ()=>{
-    let URL = '';
+    let URL = 'https://drive.google.com/file/d/1NF4M50h_7D8yFUJNFoLE6ttyMh8IEt93/view?usp=sharing';
     window.open(URL, '_blank');
 });
 document.getElementById('sel-todo-mobile').addEventListener('click', ()=>{
     let URL = '';
+    window.open(URL, '_blank');
+});
+document.getElementById('sel-revou').addEventListener('click', ()=>{
+    let URL = 'https://aplikasipms.com/revou-mini-project';
+    window.open(URL, '_blank');
+});
+
+document.getElementById('sel-react').addEventListener('click', ()=>{
+    let URL = 'https://aplikasipms.com/';
     window.open(URL, '_blank');
 });
 
@@ -156,24 +176,3 @@ document.addEventListener('DOMContentLoaded', function () {
         loop: true
     });
 });
-
-
-// function isElementInViewport(el) {
-//     var rect = el.getBoundingClientRect();
-//     return (
-//         rect.top >= 0 &&
-//         rect.left >= 0 &&
-//         rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-//         rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-//     );
-// }
-
-// function animateOnScroll() {
-//     var elements = document.querySelectorAll('.box');
-//     elements.forEach(function (element) {
-//         if (isElementInViewport(element)) {
-//             element.style.opacity = 1;
-//             element.style.transform = 'translateY(0)';
-//         }
-//     });
-// }
